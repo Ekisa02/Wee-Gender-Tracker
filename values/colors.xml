@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Gold"> #2B4083</color>
+    <color name="brownish_gray">#775855</color>
+    <color name="Deep_redish">#753b30</color>
+    <color name="soft_pastel_beige">#ceb6b4</color>
+    <color name="dark_brownish">#763a30</color>
+    <color name="green">#4CAF50</color>  <!-- For success messages -->
+    <color name="red">#F44336</color>
+    <color name="primary_color">#6200EE</color>
+    <color name="weather_bg">#F5F5F5</color>
+    <color name="gray">#757575</color>
+    <color name="Yellow">#FF9800</color>
+    <color name="YELLOW">#FFFF00</color>
+    <color name="purple">#800080</color>
+    <color name="light_gray">#C5BCBC</color>
+    <color name="Brightish_blue">#0B40ED</color>
+    <color name="MAGENTA">#FF6347</color>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="green_700">#388E3C</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="RED">#FF0000</color>
+    <color name="light_gray_background">#F5F5F5</color>
+    <color name="splash_primary">#FF6B6B</color>
+    <color name="splash_secondary">#4ECDC4</color>
+    <color name="gradient_start">#FF6E00FF</color>  <!-- Vibrant purple -->
+    <color name="gradient_mid">#FF00C6FF</color>    <!-- Bright teal -->
+    <color name="gradient_end">#FF00FFC6</color>    <!-- Mint green -->
+    <color name="gray_300">#FFE0E0E0</color>
+    <color name="teal_400">#FF26A69A</color>
+    <color name="card_background">#80343A5E</color>
+    <color name="gold">#FFD700</color>
+    <color name="gold_light">#FFF4B3</color>
+    <color name="dark_blue">#0F1A3D</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="amber">#FFC107</color>
+    <color name="pink">#E91E63</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="accent_purple">#7B1FA2</color>
+     <!-- Light purple border -->
+    <!-- Custom colors for the app -->
+    <color name="green_dark">#2E7D32</color>
+    <color name="green_light">#81C784</color>
+    <color name="card_elgeyo">#4CAF50</color>
+    <color name="card_kisumu">#2196F3</color>
+    <color name="card_turukana">#FF5722</color>
+    <color name="teal_500">#38B2AC</color>
+    <color name="red_500">#F56565</color>
+    <color name="blue_500">#4299E1</color>
+    <color name="light_green_background">#E8F5E9</color>
+    <color name="blue_link">#1976D2</color>
+    <color name="gray_light">#EEEEEE</color>
+    <color name="card_stroke">#E6E1E5</color>  <!-- Light gray with 10% opacity -->
+    <color name="background_light">#FFFBFE</color>
+    <color name="answer_background">#E8DEF8</color>
+    <color name="input_background">#F3EDF7</color>
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_hint">#79747E</color>
+    <color name="divider_color">#E6E1E510</color>
+    <color name="link_color">#2196F3</color>
+    <color name="section_header">#303F9F</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="primary_light">#BB86FC</color>
+    <color name="secondary_color">#03DAC6</color>
+    <color name="background_gradient">#F5F5F5</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="footer_background">#F5F5F5</color>
+    <color name="footer_text">#616161</color>
+    <color name="switch_track">@android:color/darker_gray</color>
+    <color name="switch_thumb">@android:color/white</color>
+
+    <!-- Material 3 Color System -->
+    <color name="primary">#6750A4</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="secondary">#625B71</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_secondary_container">#1D192B</color>
+
+    <color name="tertiary">#7D5260</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#FFD8E4</color>
+    <color name="on_tertiary_container">#31111D</color>
+    <color name="error">#B3261E</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#F9DEDC</color>
+    <!-- Surface Colors -->
+    <color name="surface">#FFFBFE</color>
+    <!-- Outline Colors -->
+    <color name="outline">#79747E</color>
+    <color name="outline_variant">#CAC4D0</color>
+    <color name="avatar_border">#79747E</color>
+    <!-- Vibrant Modern Color Palette -->
+    <color name="primary_500">#6750A4</color>
+    <color name="primary_container">#EADDFF</color>
+    <color name="on_primary_container">#21005D</color>
+
+    <color name="secondary_500">#7D5260</color>
+    <color name="secondary_container">#FFD8E4</color>
+
+    <color name="tertiary_500">#7D5260</color>
+    <color name="surface_container">#F3EDF7</color>
+    <color name="surface_container_high">#E7E0EC</color>
+    <color name="verified_badge">#4CAF50</color>
+    <color name="time_icon">#666666</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_dark">#1C1B1F</color>
+    <color name="colorPrimaryLight">#E3F2FD</color> <!-- Light blue background for notice -->
+    <color name="error_red">#FF4757</color>
+    <color name="primary_blue">#4285F4</color>
+    <color name="light_grey">#F1F3F4</color>
+    <color name="dark_grey">#202124</color>
+    <color name="white_20">#33FFFFFF</color>
+
+    <array name="profile_colors">
+        <item>#FF5252</item>
+        <item>#FF4081</item>
+        <item>#E040FB</item>
+        <item>#7C4DFF</item>
+        <item>#536DFE</item>
+        <item>#448AFF</item>
+        <item>#40C4FF</item>
+        <item>#18FFFF</item>
+        <item>#64FFDA</item>
+        <item>#69F0AE</item>
+        <item>#B2FF59</item>
+        <item>#EEFF41</item>
+        <item>#FFFF00</item>
+        <item>#FFD740</item>
+        <item>#FFAB40</item>
+        <item>#FF6E40</item>
+    </array>
+</resources>

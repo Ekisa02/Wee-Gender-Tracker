@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        app:title="App Settings"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:background="@drawable/bg_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Profile Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/settingsGear"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_settings_gear"
+                        android:background="@drawable/circle_bg_accent"
+                        android:padding="12dp"
+                        android:contentDescription="Settings icon"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:id="@+id/settingsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Settings"
+                            android:textColor="@color/primary_text"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customize your experience"
+                            android:textColor="@color/YELLOW"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Settings Categories -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferences"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Language -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/changeLanguage"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_language"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Change Language"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Theme Switch -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/themeSwitchLayout"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_dark_mode"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Dark Mode"
+                        style="@style/SettingsText1"/>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/themeSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        app:trackTint="@color/switch_track"
+                        app:thumbTint="@color/switch_thumb"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Notifications -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/notificationSwitchLayout"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_notifications"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Notifications"
+                        style="@style/SettingsText1"/>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/notificationSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        app:trackTint="@color/switch_track"
+                        app:thumbTint="@color/switch_thumb"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Support Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Contact Us -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/contactus"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_phone"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Contact Us"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- About Us -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/aboutUs"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_info"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="About Us"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Project Team -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ProjectTeam"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_people"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Project Team (C-LaSAIR Consortium)"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Data Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Survey Records -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/surveyRecords"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_assessment"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Survey Records"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Image Gallery -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/imageGallery"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_photo_library"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Image Gallery"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Legal Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Legal"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Terms and Conditions -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/termsConditions"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_description"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Terms and Conditions"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Share App -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SettingsCardItem"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/shareApp"
+                    style="@style/SettingsItem1">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_share"
+                        app:tint="@color/primary_color"/>
+
+                    <TextView
+                        android:text="Share App"
+                        style="@style/SettingsText1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_gravity="end"
+                        app:tint="@color/secondary_text"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  WEE Gender Tracker © 2025 .All rights reserved.Powered by I&amp;T Software Solutions(Tel:0741187375)"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/YELLOW"
+        android:textStyle="italic"
+        android:padding="16dp"
+        android:background="@color/accent_purple"/>
+</LinearLayout>

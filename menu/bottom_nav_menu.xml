@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_resources"
+        android:icon="@mipmap/resources_icon"
+        android:title="Resources"/>
+    <item
+        android:id="@+id/nav_gender_tracker"
+        android:icon="@mipmap/gender_icon"
+        android:title="Gender Tracker"/>
+    <item
+        android:id="@+id/nav_community"
+        android:icon="@mipmap/community_foreground"
+        android:title="Community"/>
+</menu>

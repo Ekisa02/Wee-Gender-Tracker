@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Modern Header -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COUNTY TRACKERS"
+            android:textColor="#1A237E"
+            android:textSize="14sp"
+            android:letterSpacing="0.1"
+            android:textAllCaps="true"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender Analytics Dashboard"
+            android:textColor="@color/accent_purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <!-- Elgeyo Marakwet - Modern Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:id="@+id/cardElgeyomarakwetgenger"
+            android:layout_height="180dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/card_elgeyo"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:strokeColor="#40FFFFFF"
+            app:strokeWidth="1dp"
+            app:rippleColor="#30FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <!-- Background Decoration -->
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_abstract_dots"
+                    app:tint="#30FFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-30dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@mipmap/elgeyologo"
+                        android:layout_marginBottom="12dp"
+                        />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Elgeyo Marakwet"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Statistics"
+                        android:textColor="#A7FFFFFF"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:drawableEnd="@drawable/ic_arrow_right"
+                        android:drawableTint="#FFFFFF"/>
+                </LinearLayout>
+
+                <!-- Floating Action Button -->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_analytics"
+                    app:backgroundTint="#FFFFFF"
+                    app:tint="@color/card_elgeyo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    app:elevation="8dp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Kisumu - Glass Morphism Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/cardKisumugender"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/card_kisumu"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:strokeColor="#20FFFFFF"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Blur Overlay (Requires API 31+) -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_glass_blur"
+                    android:alpha="0.7"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@mipmap/kisumu"
+                        android:layout_marginBottom="12dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kisumu"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/bg_circle"
+                            android:layout_marginEnd="4dp"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Live Data"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Animated Chart Placeholder -->
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_animated_chart"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Turukana - Neumorphic Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/cardTurukanagender"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/card_turukana"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#10000000"
+            app:strokeWidth="1dp"
+            android:foreground="?selectableItemBackground">
+
+            <!-- Neumorphic Shadow -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_neumorphic"
+                android:alpha="0.3"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@mipmap/turukanalogo"
+                        android:layout_marginBottom="12dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turukana"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Stats Badge -->
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+12% this month"
+                    app:chipBackgroundColor="#40FFFFFF"
+                    app:chipStrokeColor="#20FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    app:chipIcon="@drawable/ic_trending_up"/>
+
+                <!-- Interactive Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="EXPLORE"
+                    app:cornerRadius="18dp"
+                    app:strokeColor="#FFFFFF"
+                    app:strokeWidth="1dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#20FFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    style="@style/Widget.Material3.Button.OutlinedButton"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/splash_gradient"
+    android:padding="24dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    >
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="184dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="84dp"
+        android:src="@mipmap/ic_app_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logotittle"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/splash_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEE Gender Tracker"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily=""/>
+
+        <TextView
+            android:id="@+id/splash_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Work Smarter, Live Better"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/logotittle"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/call_us_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Call Us"
+            android:backgroundTint="#64B5F6"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_menu_call"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/email_us_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Email Us"
+            android:backgroundTint="#4FC3F7"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:drawablePadding="8dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Quick Email"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:backgroundTint="@color/teal_700" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Quick Email"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        app:backgroundTint="@color/teal_700" />
+
+</RelativeLayout>
+
+</ScrollView>

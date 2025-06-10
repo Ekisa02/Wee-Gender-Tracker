@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:fillViewport="true">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
+
+<!-- Header -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="County Gender Trackers"
+    android:textSize="24sp"
+    android:textColor="@color/YELLOW"
+    android:textStyle="bold"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:fontFamily="sans-serif-condensed"/>
+
+<!-- Elgeyo Marakwet Card -->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:id="@+id/cardElgeyomarakwetgenger"
+    android:layout_height="150dp"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/gradient_elgeyo">  <!-- Custom gradient -->
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/elgeyologo"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elgeyo Marakwet"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<!-- Kisumu Card -->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:id="@+id/cardKisumugender"
+    android:layout_height="150dp"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/gradient_kisumu">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/kisumu"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kisumu"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<!-- Turukana Card -->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/cardTurukanagender"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/gradient_turukana">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/turukanalogo"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turkana"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+    </ScrollView>

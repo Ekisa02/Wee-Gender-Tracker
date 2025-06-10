@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_divider"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundedconner"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ttldengeraensitivity"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient_background"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Personal related indicators "/>
+
+        <View style="@style/Divider"/> <!-- Divider -->
+        <View style="@style/Divider"/> <!-- Divider -->
+
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="50dp"
+          android:layout_marginEnd="6dp"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:padding="2dp"
+          android:layout_marginStart="6dp"
+          android:text="1.Access to resources
+\n\n2.Participation in decision-making
+\n\n3.Economic empowerment
+\n\n4.Education
+\n\n5.Time use:
+\n\n6.Attitudes and behaviors"
+          />
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground"
+    android:clipToPadding="false">
+
+    <!-- Question Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/questionUserAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/default_avatar"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/avatar_border"
+            app:civ_circle_background_color="@color/purple_200"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+                android:drawableEnd="@drawable/ic_verified"/>
+
+            <TextView
+                android:id="@+id/questionTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:drawableStart="@drawable/ic_time"
+                android:drawablePadding="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Question Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background_light"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        app:strokeColor="@color/card_stroke"
+        app:strokeWidth="0.5dp">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Answer Section -->
+    <LinearLayout
+        android:id="@+id/answerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Answer Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/answerUserAvatar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/default_avatar"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/avatar_border"
+                app:civ_circle_background_color="@color/teal_200"/>
+
+            <TextView
+                android:id="@+id/answerUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Answer Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/answer_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/answerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/answerTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:drawableStart="@drawable/ic_time_small"
+                android:drawablePadding="2dp"/>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- Answer Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/answerInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/input_background"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_send"
+        app:endIconTint="@color/primary_color"
+        app:startIconDrawable="@drawable/ic_edit"
+        app:startIconTint="@color/primary_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/answerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:imeOptions="actionSend"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="3"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/divider_color"/>
+</LinearLayout>

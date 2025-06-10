@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Tab Layout for Switching between Q&A and Nearby Users -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forum" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Users" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- ViewPager for Swiping between Fragments -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

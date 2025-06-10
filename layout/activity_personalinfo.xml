@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".PersonalinfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner_gradient"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingBottom="40dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+          />
+
+        <!-- First Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter first name"
+            android:inputType="textPersonName"
+            android:background="@drawable/spinner_background"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_300"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="8dp"/>
+
+        <!-- Last Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter last name"
+            android:inputType="textPersonName"
+            android:background="@drawable/spinner_background"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_300"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="8dp"/>
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="@color/white"
+            android:layout_marginBottom="12dp"
+            android:spinnerMode="dropdown"/>
+
+        <!-- Phone -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="+1 234 567 890"
+            android:inputType="phone"
+            android:background="@drawable/spinner_background"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_300"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="8dp"/>
+
+        <!-- County -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="County"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerCounty"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="@color/white"
+            android:layout_marginBottom="24dp"
+            android:spinnerMode="dropdown"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="SAVE PROFILE"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_gradient"
+            android:letterSpacing="0.1"
+            android:elevation="8dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+</ScrollView>

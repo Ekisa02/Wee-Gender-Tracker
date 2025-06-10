@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_edit_question"
+        android:title="Edit Question"
+        android:icon="@drawable/ic_edit"/>
+    <item
+        android:id="@+id/menu_edit_answer"
+        android:title="Edit Answer"
+        android:icon="@drawable/ic_edit"/>
+    <item
+        android:id="@+id/menu_delete_question"
+        android:title="Delete Question"
+        android:icon="@drawable/ic_delete"/>
+    <item
+        android:id="@+id/menu_delete_answer"
+        android:title="Delete Answer"
+        android:icon="@drawable/ic_delete"/>
+    <item
+        android:id="@+id/menu_copy_question"
+        android:title="Copy Question"
+        android:icon="@drawable/ic_copy"/>
+    <item
+        android:id="@+id/menu_copy_answer"
+        android:title="Copy Answer"
+        android:icon="@drawable/ic_copy"/>
+</menu>

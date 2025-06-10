@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/gradient_divider"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/statusBarBackground"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient_background"
+            android:backgroundTintMode="src_over"
+            android:text="Default Text"
+            android:layout_marginStart="10dp"
+            android:textSize="22sp"
+            android:layout_gravity="start"
+            android:textStyle="bold"/>
+        <View style="@style/Divider"/> <!-- Divider -->
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/brownish_gray"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Economic (access and control of resources to respond and recover from disaster)\n\n2.Social (disaster preparedness)"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

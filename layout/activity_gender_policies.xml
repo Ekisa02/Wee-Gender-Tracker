@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".GenderPoliciesActivity">
+
+    <!-- Fixed Header -->
+    <LinearLayout
+        android:id="@+id/fixed_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangleshape"
+        android:paddingTop="?attr/actionBarSize"
+        android:elevation="8dp"
+        android:backgroundTint="@color/Gold"
+        android:padding="2dp"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_app_logo"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/roundedconner"
+            android:keyboardNavigationCluster="true"
+
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender related polies in Kenya"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/fixed_header"
+        android:layout_above="@+id/buttonContainer"
+        android:background="@color/light_gray_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Equality and freedom from discrimination section -->
+            <TextView
+                android:id="@+id/section_equality_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/section_header"
+                android:padding="15dp"
+                android:text="Equality and Freedom from Discrimination"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/equality_links_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/equality_subheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Relevant Policies and Acts:"
+                    android:textColor="@color/primary_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Agricultural Policy 2021 -->
+                <TextView
+                    android:id="@+id/link_agricultural_policy1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="1. Agricultural Policy 2021"
+                    android:textColor="@color/link_color"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_link"
+                    android:drawablePadding="5dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textAllCaps="false"/>
+
+                <!-- Water Act 2016 -->
+                <TextView
+                    android:id="@+id/link_water_act1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="2. Water Act 2016"
+                    android:textColor="@color/link_color"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_link"
+                    android:drawablePadding="5dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textAllCaps="false"/>
+
+                <!-- Forest Conservation Act -->
+                <TextView
+                    android:id="@+id/link_forest_act1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="3. Forest Conservation and Management Act 2016"
+                    android:textColor="@color/link_color"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_link"
+                    android:drawablePadding="5dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textAllCaps="false"/>
+
+                <!-- UN SDGs -->
+                <TextView
+                    android:id="@+id/link_sdgs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="4. United Nations Sustainable Development Goals"
+                    android:textColor="@color/link_color"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_link"
+                    android:drawablePadding="5dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <!-- Economic and social rights section -->
+            <TextView
+                android:id="@+id/section_economic_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/section_header"
+                android:padding="15dp"
+                android:text="Economic and Social Rights"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/economic_links_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/economic_subheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Relevant Policies and Acts:"
+                    android:textColor="@color/primary_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Agricultural Policy 2021 -->
+                <TextView
+                    android:id="@+id/link_agricultural_policy2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="1. Agricultural Policy 2021"
+                    android:textColor="@color/link_color"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_link"
+                    android:drawablePadding="5dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textAllCaps="false"/>
+
+                <!-- Water Act 2016 -->
+                <TextView
+                    android:id="@+id/link_water_act2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="2. Water Act 2016"
+                    android:textColor="@color/link_color"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_link"
+                    android:drawablePadding="5dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textAllCaps="false"/>
+
+                <!-- UN SDGs -->
+                <TextView
+                    android:id="@+id/link_sdgs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="3. United Nations Sustainable Development Goals"
+                    android:textColor="@color/link_color"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_link"
+                    android:drawablePadding="5dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Button Container at Bottom -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="8dp">
+
+        <Button
+            android:id="@+id/downloadButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Download PDF"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/teal_200"
+            android:drawableStart="@drawable/ic_download"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/openButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Open PDF"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:drawableStart="@drawable/ic_open_in_new"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</RelativeLayout>

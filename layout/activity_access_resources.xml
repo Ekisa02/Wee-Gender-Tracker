@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_divider"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Default Text"
+
+            android:background="@drawable/gradient_background"
+            android:backgroundTintMode="src_over"
+            android:layout_marginStart="10dp"
+            android:textSize="22sp"
+            android:layout_gravity="start"
+            android:textStyle="bold"/>
+        <View style="@style/Divider"/> <!-- Divider -->
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Land\n\n2.Cash income\n\n3.Farm produce\n\n4.Livestock\n\n5.Labour\n\n6.Credit\n\n7.Education/ training\n\n8.Asset ownership\n\n9.Basic necessities \n(food, clothes and shelter) "
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

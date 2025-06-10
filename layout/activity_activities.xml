@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_divider"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_background"
+            android:backgroundTintMode="src_over"
+            android:textColor="@color/white"
+            android:text="Default Text"
+            android:layout_marginStart="10dp"
+            android:textSize="22sp"
+            android:layout_gravity="start"
+            android:textStyle="bold"/>
+        <View style="@style/Divider"/> <!-- Divider -->
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/Brightish_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="Keiyo South"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangleshape"
+            android:backgroundTint="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Water harvesting\n\n2.Bee keeping\n\n3.Poultry Management"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/Brightish_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="Keiyo North"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangleshape"
+            android:backgroundTint="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Poultry Management\n\n2.Bee keeping\n\n3.Mango value Addition"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/Brightish_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="Kisumu East"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangleshape"
+            android:backgroundTint="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Poultry Management"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/Brightish_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="Nyando"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangleshape"
+            android:backgroundTint="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Rise-Fish paddies\n\n2.Ahero irrigation Scheme "
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/Brightish_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="Turkana  Central"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangleshape"
+            android:backgroundTint="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Tiya  irrigation scheme sorghum Production"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/Brightish_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="Turkana South/Loima"
+            android:layout_gravity="center"
+            android:gravity="start"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangleshape"
+            android:backgroundTint="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:handwritingBoundsOffsetRight="@dimen/cardview_default_radius"
+            android:text="1.Achukule Farm Groundnuts productions\n\n2.Nehema Women group Poultry"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_marginBottom="40dp"
+            />
+        <View style="@style/Divider"/> <!-- Divider -->
+
+
+    </LinearLayout>
+
+</ScrollView>
